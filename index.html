@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Cumpleaños Sofia</title>
+  </head>
+  <body>
+    <main>
+      <div id="app" class="container">
+        <img class="logo" src="./assets/logo_pokemon.png" alt="" />
+        <img class="pikachu" src="./assets/pikachu.png" alt="" />
+        <div class="texto">
+          <p>
+            El día # se va a celebrar un evento sin precedentes en el mundo
+            Pokémon, el cumpleaños de la Maestra Pokémon Sofia Ardila.
+            Entrenador (a), introduce tu nombre en el espacio de abajo y
+            descubre si fuiste seleccionado para participar de este magnifico
+            evento.
+          </p>
+          <input class="input" v-model="invitado" type="text" />
+          <button class="button" v-on:click="findGuest">VERIFICAR</button>
+          <h1 v-if="message">FELICIDADES</h1>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

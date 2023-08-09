@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: "Handjet", sans-serif;
+}
+
+body {
+  align-items: center;
+  background-image: url("/assets/pokemon_fondo5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 830px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: aliceblue;
+  border-radius: 20px;
+  height: 55%;
+  width: 45%;
+  background-color: #ffdeeb;
+}
+
+.logo {
+  width: 45%;
+}
+
+.pikachu {
+  display: block;
+  position: absolute;
+  width: 25%;
+  left: 25px;
+  top: 110px;
+}
+
+.texto {
+  position: absolute;
+  top: 110px;
+  left: 220px;
+  width: 430px;
+  height: 150px;
+}
+
+p {
+  font-size: 26px;
+}

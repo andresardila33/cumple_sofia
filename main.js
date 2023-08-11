@@ -4,10 +4,15 @@ const invitados = [
   "VALENTINO",
   "JOSÉ ANGEL",
   "JOSÉ",
+  "JOSE ANGEL",
+  "JOSE",
   "ALANA",
   "ANTONELLA",
   "MARIANA",
   "MARIAJOSE",
+  "MARIA JOSE",
+  "MARÍAJOSÉ",
+  "MARÍA JOSÉ",
   "MÍA",
   "MIA",
   "LUCIANA",
@@ -20,6 +25,10 @@ const invitados = [
   "EILIN VALERIA",
 ];
 
+// function playAudio() {
+//   document.getElementById("music1").play();
+// }
+
 const { createApp } = Vue;
 
 createApp({
@@ -27,6 +36,14 @@ createApp({
     return {
       invitado: "",
       message: false,
+      songs: [
+        {
+          title: "Atrapalos ya",
+          author: "Oscar Roa",
+          src: "./assets/pokemon.mp3",
+        },
+      ],
+      player: new Audio(),
     };
   },
   methods: {

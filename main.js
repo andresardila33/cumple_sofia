@@ -25,9 +25,9 @@ const invitados = [
   "EILIN VALERIA",
 ];
 
-// function playAudio() {
-//   document.getElementById("music1").play();
-// }
+function playAudio() {
+  document.getElementById("music1").play();
+}
 
 const { createApp } = Vue;
 

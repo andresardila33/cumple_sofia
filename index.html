@@ -16,9 +16,9 @@
     <title>Cumpleaños Sofia</title>
   </head>
   <body onclick="playAudio()">
-    <!-- <audio id="music1" autoplay loop>
+    <audio id="music1" autoplay loop>
       <source src="./assets/pokemon.mp3" type="audio/mpeg" />
-    </audio> -->
+    </audio>
     <header>
       <div class="box1">
         <img class="logo" src="./assets/logo_pokemon.png" alt="" />
@@ -27,25 +27,17 @@
         <h1>CUMPLEAÑOS DE SOFIA ARDILA</h1>
       </div>
     </header>
-    <main>
-      <section class="estadio"></section>
-      <div id="app" class="container">
-        <div class="box2">
-          <img class="pikachu" src="./assets/pikachu.png" alt="" />
-          <h1 v-if="message">FELICIDADES</h1>
-        </div>
-        <div class="text">
-          <p>
-            El día # se va a celebrar un evento sin precedentes en el mundo
-            Pokémon, el cumpleaños de la Maestra Pokémon Sofia Ardila.
-            Entrenador (a), introduce tu nombre en el espacio de abajo y
-            descubre si fuiste seleccionado para participar de este magnifico
-            evento.
-          </p>
-        </div>
-        <div class="verificar">
-          <input class="input" v-model="invitado" type="text" />
-        </div>
+    <main id="app">
+      <div class="text">
+        <p>
+          El día # se va a celebrar un evento sin precedentes en el mundo
+          Pokémon, el cumpleaños de la Maestra Pokémon Sofia Ardila. Entrenador
+          (a), introduce tu nombre en el espacio de abajo y descubre si fuiste
+          seleccionado para participar de este magnifico evento.
+        </p>
+      </div>
+      <div class="verificar">
+        <input class="input" v-model="invitado" type="text" />
         <div class="verificar__button">
           <img
             v-on:click="findGuest"
@@ -56,6 +48,12 @@
           <span>VERIFICAR</span>
         </div>
       </div>
+      <div class="box2">
+        <img class="pikachu" src="./assets/pikachu.png" alt="" />
+        <h1 v-if="message">FELICIDADES</h1>
+      </div>
+      <div class="container"></div>
+      <section class="estadio"></section>
     </main>
     <script src="./main.js"></script>
   </body>

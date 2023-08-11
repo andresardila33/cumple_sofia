@@ -15,9 +15,13 @@ header {
   align-items: center;
 }
 
+.title {
+  margin-top: 1rem;
+}
+
 h1 {
   color: #e64980;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 0;
   text-align: center;
@@ -47,7 +51,8 @@ main {
 p {
   margin-left: 1rem;
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 500;
 }
 
 .verificar {
@@ -77,6 +82,7 @@ p {
 .box2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .pikachu {

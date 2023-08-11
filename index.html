@@ -23,7 +23,7 @@
       <div class="box1">
         <img class="logo" src="./assets/logo_pokemon.png" alt="" />
       </div>
-      <div>
+      <div class="title">
         <h1>CUMPLEAÑOS DE SOFIA ARDILA</h1>
       </div>
     </header>
@@ -35,6 +35,10 @@
           (a), introduce tu nombre en el espacio de abajo y descubre si fuiste
           seleccionado para participar de este magnifico evento.
         </p>
+      </div>
+      <div class="box2">
+        <img class="pikachu" src="./assets/pikachu.png" alt="" />
+        <h1 v-if="message">FELICIDADES</h1>
       </div>
       <div class="verificar">
         <input class="input" v-model="invitado" type="text" />
@@ -48,10 +52,7 @@
           <span>VERIFICAR</span>
         </div>
       </div>
-      <div class="box2">
-        <img class="pikachu" src="./assets/pikachu.png" alt="" />
-        <h1 v-if="message">FELICIDADES</h1>
-      </div>
+
       <div class="container"></div>
       <section class="estadio"></section>
     </main>

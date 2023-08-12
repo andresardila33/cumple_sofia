@@ -106,7 +106,11 @@ main {
 }
 
 .genero1__img {
-  max-width: 12rem;
+  max-width: 14rem;
+}
+
+.genero2__img {
+  max-width: 22rem;
 }
 
 .estadio {

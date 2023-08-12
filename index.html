@@ -65,7 +65,14 @@
         </p>
         <img class="genero1__img" src="./assets/entrenador.png" alt="" />
       </section>
-      <!-- <section v-if="genero2"></section> -->
+      <section v-if="genero2" class="mensaje-oculto1">
+        <p class="genero1__text-content">
+          Felicidades entrenadora {{ invitado }}, te encuentras entre el selecto
+          grupo de invitados a este espectacular evento, alista tus Pokemons y
+          preparate para esta aventura.
+        </p>
+        <img class="genero2__img" src="./assets/entrenadora.png" alt="" />
+      </section>
       <section class="estadio"></section>
     </main>
     <script src="./main.js"></script>

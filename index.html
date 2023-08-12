@@ -20,40 +20,52 @@
       <source src="./assets/pokemon.mp3" type="audio/mpeg" />
     </audio>
     <header>
-      <div class="box1">
-        <img class="logo" src="./assets/logo_pokemon.png" alt="" />
+      <div>
+        <img
+          class="header__logo"
+          src="./assets/logo_pokemon.png"
+          alt="Pokémon"
+        />
       </div>
-      <div class="title">
+      <div class="header__title">
         <h1>CUMPLEAÑOS DE SOFIA ARDILA</h1>
       </div>
     </header>
     <main id="app">
-      <div class="text">
-        <p>
-          El día # se va a celebrar un evento sin precedentes en el mundo
-          Pokémon, el cumpleaños de la Maestra Pokémon Sofia Ardila. Entrenador
-          (a), introduce tu nombre en el espacio de abajo y descubre si fuiste
-          seleccionado para participar de este magnifico evento.
+      <div class="main__text">
+        <p class="maintext__text-content">
+          El día 18 de Agosto de 2023, se va a celebrar un evento sin
+          precedentes en el mundo Pokémon, el cumpleaños de la Maestra Pokémon
+          Sofia Ardila. Entrenador (a), introduce tu nombre en el espacio de
+          abajo y descubre si has sido seleccionado para participar de este
+          magnifico evento.
         </p>
       </div>
-      <div class="box2">
+      <div class="main__box1">
         <img class="pikachu" src="./assets/pikachu.png" alt="" />
-        <h1 v-if="message">FELICIDADES</h1>
+        <!-- <h1 v-if="message">FELICIDADES</h1> -->
       </div>
-      <div class="verificar">
-        <input class="input" v-model="invitado" type="text" />
-        <div class="verificar__button">
+      <div class="main__box2">
+        <input class="box2__input" v-model="invitado" type="text" />
+        <div class="box2__verificar">
           <img
             v-on:click="findGuest"
             class="pokeball"
             src="./assets/pokeball.png"
             alt=""
           />
-          <span>VERIFICAR</span>
+          <span class="box2__verificar-tag">VERIFICAR</span>
         </div>
       </div>
-
-      <div class="container"></div>
+      <section v-if="genero1" class="mensaje-oculto1">
+        <p class="genero1__text-content">
+          Felicidades entrenador {{ invitado }}, te encuentras entre el selecto
+          grupo de invitados a este espectacular evento, alista tus Pokemons y
+          preparate para esta aventura.
+        </p>
+        <img class="genero1__img" src="./assets/entrenador.png" alt="" />
+      </section>
+      <!-- <section v-if="genero2"></section> -->
       <section class="estadio"></section>
     </main>
     <script src="./main.js"></script>

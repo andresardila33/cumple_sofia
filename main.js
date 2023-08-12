@@ -35,7 +35,7 @@ createApp({
   data() {
     return {
       invitado: "",
-      message: false,
+      genero1: false,
       songs: [
         {
           title: "Atrapalos ya",
@@ -49,16 +49,18 @@ createApp({
   methods: {
     findGuest() {
       for (let index = 0; index < invitados.length; index++) {
-        if (this.invitado.toUpperCase() === invitados[index])
+        if (this.invitado.toUpperCase() === invitados[index]) {
+          this.invitado = this.invitado.toUpperCase();
           this.showMessage();
-        //const element = array[index];
+          //const element = array[index];
+        }
       }
     },
     showMessage() {
-      if (this.message === false) {
-        this.message = true;
+      if (this.genero1 === false) {
+        this.genero1 = true;
       } else {
-        this.message = false;
+        this.genero1 = false;
       }
     },
   },
